@@ -3,4 +3,13 @@ from django.shortcuts import render
 
 # Create your views here.
 def home(request):
-    return HttpResponse('hello i am working')
+    return render(request, 'authentication/index.html')
+
+def signup(request):
+    return render(request, 'authentiacation/signup.html')
+
+def signin(request):
+    return render(request, 'authentiacation/signin.html')
+
+def signout(request):
+    pass
